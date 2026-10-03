@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COER University - College Admission</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; line-height: 1.5; }
+        header, section, footer { padding: 20px; }
+        header { text-align: center; background: #eeeeee; }
+        .logo { width: 250px; height: 150px; object-fit: contain; }
+        .course-img { width: 400px; height: 220px; object-fit: cover; }
+        table { border-collapse: collapse; width: 80%; }
+        th, td { border: 1px solid black; padding: 8px; text-align: center; }
+        th { background: #dddddd; }
+        form { max-width: 550px; padding: 20px; border: 1px solid #444; }
+        label { display: inline-block; width: 150px; margin-bottom: 10px; vertical-align: top; }
+    </style>
+</head>
+<body>
+    <!-- Question 10: College Admission webpage containing headings, paragraphs,
+         lists, images, tables and a registration form. -->
+
+    <header>
+        <img class="logo"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/COER_University_logo.png/320px-COER_University_logo.png"
+             alt="COER University Logo">
+        <h1>COER University</h1>
+        <h2>College Admission 2026-2027</h2>
+        <p>Welcome to COER University. Apply for admission to your preferred undergraduate programme.</p>
+    </header>
+
+    <section>
+        <h2>About the University</h2>
+        <p>
+            COER University provides undergraduate programmes with a focus on academic
+            learning, practical skills and professional development.
+        </p>
+
+        <h2>Courses Offered</h2>
+        <ul>
+            <li>Bachelor of Computer Applications (BCA)</li>
+            <li>Bachelor of Technology (B.Tech)</li>
+            <li>Bachelor of Business Administration (BBA)</li>
+        </ul>
+
+        <img class="course-img"
+             src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+             alt="Students learning computer programming">
+    </section>
+
+    <section>
+        <h2>Admission Eligibility</h2>
+        <ol>
+            <li>Complete the required qualifying examination.</li>
+            <li>Choose the desired course.</li>
+            <li>Fill in the admission registration form.</li>
+            <li>Submit the required documents.</li>
+            <li>Complete the admission process after verification.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Course Details</h2>
+        <table>
+            <tr>
+                <th>Course</th>
+                <th>Duration</th>
+                <th>Mode</th>
+                <th>Subjects/Areas</th>
+            </tr>
+            <tr>
+                <td>BCA</td>
+                <td>3 Years</td>
+                <td>Full Time</td>
+                <td>Programming, DBMS, Web Development</td>
+            </tr>
+            <tr>
+                <td>B.Tech</td>
+                <td>4 Years</td>
+                <td>Full Time</td>
+                <td>Programming, Data Structures, Engineering</td>
+            </tr>
+            <tr>
+                <td>BBA</td>
+                <td>3 Years</td>
+                <td>Full Time</td>
+                <td>Management, Marketing, Finance</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Admission Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female<br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option>BCA</option>
+                <option>B.Tech</option>
+                <option>BBA</option>
+            </select><br>
+
+            <label>Hobbies:</label>
+            <input type="checkbox" name="hobby" value="Coding"> Coding
+            <input type="checkbox" name="hobby" value="Reading"> Reading
+            <input type="checkbox" name="hobby" value="Sports"> Sports<br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="30"></textarea><br>
+
+            <input type="submit" value="Submit Application">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+
+    <footer>
+        <p><b>COER University</b> | BCA 3rd Semester | Session 2026-2027</p>
+    </footer>
+</body>
+</html>
